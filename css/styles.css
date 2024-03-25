@@ -101,11 +101,11 @@ h3 {
   border-bottom: 1px solid var(--accent-color);
 }
 
-.header__inner-wrapper {
+.header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 4px 0;
+  padding: 4px 15px;
 }
 
 .header__nav {
@@ -114,7 +114,7 @@ h3 {
 }
 
 .logo {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   font-family: var(--helper--font);
@@ -131,6 +131,11 @@ h3 {
 
 .logo span {
   color: var(--primary-brand-color);
+}
+
+.nav {
+  display: flex;
+  gap: 76px;
 }
 
 .nav ul {
@@ -176,7 +181,7 @@ h3 {
   background-color: var(--pressed-state-color);
 }
 
-.contact-information {
+.contact-information ul {
   display: flex;
   align-items: center;
   gap: 40px;
@@ -198,10 +203,6 @@ h3 {
 /* Index page */
 .hero {
   padding: 188px 0;
-  display: flex;
-  flex-direction: column;
-  gap: 48px;
-  align-items: center;
   background-color: var(--dark-color);
 }
 
@@ -209,6 +210,12 @@ h3 {
   max-width: 496px;
   text-align: center;
   color: var(--white-background-color);
+  margin: 0 auto 48px;
+}
+
+.hero .button {
+  display: block;
+  margin: 0 auto;
 }
 
 .decision {
@@ -223,12 +230,13 @@ h3 {
 }
 
 .decision ul li {
-  display: flex;
-  flex-direction: column;
   flex-shrink: 0;
   width: 100%;
   max-width: 264px;
-  gap: 8px;
+}
+
+.decision h3 {
+  margin-bottom: 8px;
 }
 
 .projects {
@@ -269,10 +277,12 @@ h3 {
 }
 
 .team__information {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;
   padding: 32px 16px;
+}
+
+.team__information h3 {
+  margin-bottom: 8px;
 }
 
 /* Portfolio Page */
@@ -283,13 +293,13 @@ h3 {
 .tabs {
   display: flex;
   flex-direction: column;
-  gap: 72px;
 }
 
-.tabs__controls {
+.tab-controls {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 72px;
   gap: 24px;
 }
 
@@ -329,7 +339,7 @@ h3 {
               0 2px 2px 0 rgba(0, 0, 0, .12);
 }
 
-.tabs__list {
+.tabs-list {
   display: flex;
   flex-wrap: wrap;
   gap: 48px 24px;
@@ -382,8 +392,11 @@ h3 {
   border-top: none;
 }
 
-.portfolio__information h3 {
+.portfolio__information h2 {
   margin-bottom: 8px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2em;
 }
 
 /* Footer */
@@ -391,16 +404,13 @@ h3 {
   background-color: var(--dark-color);
 }
 
-.footer__inner-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  padding: 100px 0;
+.footer .container {
+  padding: 100px 15px;
   gap: 16px;
 }
 
 .footer__information {
   max-width: 264px;
+  margin-top: 17.5px;
   color: var(--light-color);
 }
